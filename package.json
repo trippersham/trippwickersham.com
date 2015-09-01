@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/trippersham/trippwickersham.com#readme",
   "dependencies": {
+    "express": "^4.13.3",
     "handlebars": "^3.0.3"
   }
 }
