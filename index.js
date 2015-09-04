@@ -1,9 +1,14 @@
 var express = require('express');
-var app = express();
 var handlebars = require('handlebars');
+var exphbs = require('express-handlebars');
+
+var app = express();
+
+app.engine('.hbs', exphbs({defaultLayout: 'main', extname: '.hbs'}));
+app.set('view engine', '.hbs');
 
 app.get('/', function(req, res) {
-	res.send('Hello World!');
+	res.render('home');
 });
 
 var server = app.listen(3000, function() {
