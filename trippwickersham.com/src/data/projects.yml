@@ -1,0 +1,54 @@
+-
+  name: 3D Q
+-
+  name: Frolic
+  organization: Frolic
+  organization-url: https://www.frolicwith.us
+  start-date: August 2014
+  end-date: February 2015
+  prod:
+    blurb: Led a team of three software engineers to take a start-up from concept to market in 5 months, acting as product lead, engineer, engineering manager, patent-writer, and head of marketing and public relations.
+  eng:
+    blurb: Architected user authentication, user information, and real-time session-management APIs in Node.js. Managed deployment of that stack to AWS. Built multiple experiences in the corresponding iOS app with a focus on UI development.
+    technologies:
+      - Node.js
+      - Objective-C
+      - MongoDB
+  url: https://itunes.apple.com/us/app/frolic-decide-restaurants/id959175695
+  img-url: https://frolicwith.us/images/landing-page/section-3/pick.png
+-
+  name: Selling Products Cross-Platform
+  organization: RetailMeNot
+  organization-url: http://www.retailmenot.com
+  start-date: February 2015
+  end-date: August 2015
+  eng:
+    technologies:
+      - Objective-C
+      - Java
+      - PHP
+      - MySQL
+      - MongoDB
+      - RabbitMQ
+  url: http://www.retailmenot.com/ideas/hot-products
+-
+  name: Native App Gift Cards
+  organization: RetailMeNot
+  start-date: August 2015
+  end-date: November 2015
+  prod:
+    blurb: Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim.
+  eng:
+    technologies:
+      - Objective-C
+      - Swift
+  url:
+  img-url: http://i.imgur.com/754dgDQ.png
+-
+  name: Omni-Content Search for App
+  organization: RetailMeNot
+  start-date: January 2016
+  end-date: April 2016
+  prod: true
+-
+  name:

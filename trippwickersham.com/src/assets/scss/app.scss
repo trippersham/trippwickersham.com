@@ -5,8 +5,8 @@
 @import 'motion-ui';
 
 @include foundation-global-styles;
-@include foundation-grid;
-// @include foundation-flex-grid;
+//@include foundation-grid;
+@include foundation-flex-grid;
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
@@ -44,7 +44,103 @@
 @include foundation-top-bar;
 @include foundation-visibility-classes;
 @include foundation-float-classes;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// center tabs (courtesy of http://stackoverflow.com/a/24549878)
+ul.tabs {
+    text-align: center;
+    li {
+        float: none !important;
+        display: inline-block;
+    }
+}
+
+.h2 {
+
+}
+
+$project-card-image-height-desktop: 200px !important;
+$shadow-color: #333;
+$background-color: #D6D7D0;
+
+.site-header {
+
+}
+
+.tab {
+    background-color: $background-color;
+}
+
+// Styling for Project Cards
+
+.project-card {
+    background-color: white;
+    margin: 4px !important;
+    box-shadow: 0 5px 5px -5px $shadow-color;
+    .show-for-small-only {
+    }
+    .show-for-medium {
+
+    }
+}
+
+.project-card-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.project-card-content {
+    &.show-for-small-only {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &.show-for-medium {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+.project-card-title {
+    margin: 0;
+    font-size: large;
+}
+
+.project-card-subtitle-container {
+    .show-for-small-only & {
+        padding-left: 10px;
+    }
+    .show-for-medium & {
+        padding-left: 15px;
+    }
+    margin-bottom: 8px;
+    font-size: smaller;
+}
+
+.project-card-subtitle {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.project-card-image {
+    &.show-for-small-only {
+        width: 100%;
+        padding: 0;
+        background-size: cover;
+        background-position: center center;
+    }
+    .show-for-medium & {
+        height: $project-card-image-height-desktop;
+        max-height: $project-card-image-height-desktop;
+        margin: 15px;
+    }
+}
+
+.project-card-technologies-title {
+    text-align: center;
+    font-size: small;
+}

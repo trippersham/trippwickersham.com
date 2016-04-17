@@ -1,0 +1,48 @@
+<div class="project-card-container small-12 medium-6 large-4 columns">
+    <div class="project-card row">
+
+        <!-- for small screens -->
+
+        <div class="project-card-content small-10 columns show-for-small-only">
+            <a href="{{url}}" class="project-card-title">{{name}}</a>
+            <div class="row project-card-subtitle-container">
+                <p class="column shrink project-card-subtitle">{{start-date}} - {{end-date}}</p>
+                <p class="column shrink project-card-subtitle"> @ </p>
+                <a href="{{organization-url}}" class="column shrink project-card-subtitle">{{organization}}</a>
+            </div>
+            {{> blurb type=type}}
+        </div>
+        <div style="background-image: url({{img-url}});" class="project-card-image columns show-for-small-only"></div>
+
+        <!-- for medium and large screens -->
+
+        <div class="medium-12 columns show-for-medium">
+            {{#if img-url}}
+            <div class="row align-center"><img class="project-card-image " src={{img-url}}></div>
+            {{/if}}
+        </div>
+        <div class="project-card-content medium-12 columns show-for-medium">
+            <a href="{{url}}" class="project-card-title">{{name}}</a>
+            <div class="row project-card-subtitle-container">
+                <p class="column shrink project-card-subtitle">{{start-date}} - {{end-date}}</p>
+                <p class="column shrink project-card-subtitle"> @ </p>
+                <a href="{{organization-url}}" class="column shrink project-card-subtitle">{{organization}}</a>
+            </div>
+            {{> blurb type=type}}
+        </div>
+
+        <!-- technologies used -->
+        
+        {{#ifequal type 'eng'}}
+        <p class="project-card-technologies-title align-center small-12">technologies used</p>
+        <div class="row align-justify expanded">
+            {{#each eng.technologies}}
+            <div class="small-4 column">
+                <p class="project-card-technologies-title">{{this}}</p>
+            </div>
+            {{/each}}
+        </div>
+        {{/ifequal}}
+
+    </div>
+</div>
